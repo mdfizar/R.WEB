@@ -1,0 +1,94 @@
+ /*----------SECTION 2-------------*/
+.contact {
+  background-color: #e2e3e5;
+}
+.input {
+  border: 1px solid gray;
+  width: 100%;
+  padding: 10px;
+  border-radius: 7px;
+}
+.input, .massege:focus {
+  outline-color: rgb(239, 158, 7);
+}
+.massege {
+  width: 100%;
+  height: 200px;
+  border-radius: 7px;
+}
+.submite-btn {
+  width: 10rem;
+  padding: 10px 0px;
+  background-color: rgb(255, 166, 0);
+  border-radius: 15px;
+}
+
+/*---------SECTION 3-----------*/
+
+
+
+
+/*---------SECTION 4----------*/
+#service h3 {
+  border-bottom: 5px solid rgb(193, 193, 191);
+  padding: 5px;
+  max-width:fit-content;
+  transition: 0.5s;
+}
+#service .edit:hover  h3 {
+  border-bottom: 5px solid rgb(232, 154, 8);
+}
+ #service .edit:hover span { 
+  background-color: rgb(236, 155, 5);
+}
+#service i {
+  font-size: 25px;
+  color:rgb(246, 174, 29);
+  margin-left: 5px;
+  margin-top: 7px;
+}
+#service .edit span {
+  width: 60px;
+  background-color: rgb(193, 193, 191);
+  text-align: center;
+  border-radius: 30px;
+  margin-bottom: 2.3rem;
+  transition: 0.5s;
+}
+#service .edit span i {
+  font-size: 40px;
+  padding: 0px;
+  margin: 0px;
+  color: black;
+  margin-left: -45px;
+}
+
+/*----------SECTION 5-------------*/
+
+.list {
+  display: flex;
+  gap: 15px;
+}
+.list .icon {
+  width: 80px;
+  height: 40px;
+  border-radius: 5px;
+  text-align: center;
+  box-shadow: inset 0px 0px 0px 1px gray;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.list .icon i {
+  font-size: 20px;
+  color: rgb(249, 206, 127);
+}
+.list:hover .icon {
+  background-color: rgb(247, 194, 96);
+}
+.list:hover h5 {
+  color: rgb(208, 135, 0);
+}
+.list:hover i {
+  color: white;
+}
