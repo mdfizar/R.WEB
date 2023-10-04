@@ -15,7 +15,6 @@
 .item li:hover .hover {
   background-position: 100px;
 }
-}
 @media (max-width: 992px) {
   .item .hover {
     width: 100px;
