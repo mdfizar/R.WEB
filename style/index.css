@@ -21,6 +21,7 @@
     transition: 1s;
   }
 }
+
 /*----------- service --------------- */
 .my-span {
   width: 80px;
@@ -35,7 +36,7 @@
   transition: 0.8s;
 
 }
-.my-span i {
+.my-span i { 
   font-size: 30px;
   padding: 10px;
   transition: 0.8s;
@@ -113,8 +114,6 @@
   color: blue;
   font-size: 40px;
 }
-
-
 
 /*-----SWIPER slider STYLE------*/
 .swiper-slide .img {
