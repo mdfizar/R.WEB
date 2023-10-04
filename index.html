@@ -24,6 +24,73 @@
 </head>
 <body>
 <!--------HEADER--------------->
+<header id="header">
+  <nav class="navbar navbar-expand-lg bg-info">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#">Navbar</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse justify-content-end" id="navbarNavDropdown">
+        <ul class="navbar-nav item">
+          <li class="nav-item">
+            <a class="nav-link" aria-current="page" href="index.html">
+              HOME
+              <div class="hover"></div>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#about">
+              ABOUT
+              <div class="hover"></div>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#service">
+              SERVEICE
+              <div class="hover"></div>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#protfolio">
+              WORK
+              <div class="hover"></div>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">
+              BLOG
+              <div class="hover"></div>
+            </a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link" href="#" role="button"      data-bs-toggle="dropdown" aria-expanded="false">
+              DROP DOWN <span><i class="bi bi-caret-down-fill"></i></span>
+              <div class="hover"></div>
+            </a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="#">edit</a></li>
+              <li><a class="dropdown-item" href="#">edit</a></li>
+              <li><a class="dropdown-item" href="#">edit</a></li>
+            </ul>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#contact">
+              CONTACT
+              <div class="hover"></div>
+            </a>            
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <div class="container">
+  <h1 class="text-center">Luise Maccro</h1>
+  <p style="max-width: 400px;" class="text-center mx-auto mt-5 text-info">
+    Lorem ipsum dolor sit amet consectetur adipisicing elit. Error perferendis consequatur laboriosam magni mollitia! Nisi saepe voluptates possimus, quos, temporibus aperiam deleniti sapiente laudantium sed modi magnam, et accusantium deserunt.
+  </p>
+  </div>
+</header>
 
 
 <!---------MAIN----------->
@@ -87,7 +154,7 @@
         </div>
       </div>
   </section>
-  <section class="my-5" id="service ">
+  <section class="my-5" id="service">
       <h1 class="text-center">SERVICES</h1>
       <p class="text-center">
         Lorem ipsum, dolor sit amet consectetur adipisicing elit.
@@ -326,27 +393,29 @@
   </section>
 <!--------SLIDER------------>
 <br><br>
-  <section id="slider">
+  <section id="slider" class="p-5 bg-info">
     <div class="container">
        <!-- Swiper -->
        <div class="swiper mySwiper">
         <div class="swiper-wrapper">
-          <div class="swiper-slide bg-info py-5">
-            <div class="img">
-              <img src="https://images.unsplash.com/photo-1438761681033-6461ffad8d80?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8cGVyc29ufGVufDB8fDB8fHww&w=1000&q=80" alt="">
+          <div class="swiper-slide py-5 d-flex justify-content-center">
+              <div class="img">
+                <img src="https://images.unsplash.com/photo-1438761681033-6461ffad8d80?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8cGVyc29ufGVufDB8fDB8fHww&w=1000&q=80" alt="">
+                <h1>MARTA SCORAT</h1>
+                <P>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Maxime, itaque.</P>
+              </div>
             </div>
+              <div class="swiper-slide py-5 d-flex justify-content-center">
+                <div class="img">
+                  <img src="https://t3.ftcdn.net/jpg/02/43/12/34/360_F_243123463_zTooub557xEWABDLk0jJklDyLSGl2jrr.jpg" alt="">
+                  <h1>XAVI ALNSO</h1>
+                  <P>Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat, voluptatem.</P>
+                </div>
+              </div>
           </div>
-          <div class="swiper-slide bg-info py-5">
-            <div class="img">
-              <img src="https://t3.ftcdn.net/jpg/02/43/12/34/360_F_243123463_zTooub557xEWABDLk0jJklDyLSGl2jrr.jpg" alt="">
-            </div>
-          </div>
-        </div>
           <div class="swiper-button-next"></div>
           <div class="swiper-button-prev"></div>
           <div class="swiper-pagination"></div>
-      </div>
-    
     </div>
   </section>
   <br><br><br>
@@ -363,22 +432,7 @@
 
 <!--------SWIPER JS---------->
 <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
-<script>
-  var swiper = new Swiper(".mySwiper", { slidesPerView: "1",
-    spaceBetween: 0,
-    autoplay: {
-      delay: 2500,
-      disableOnInteraction: false,
-    },
-    pagination: {
-      el: ".swiper-pagination",
-      clickable: true,
-    },
-    navigation: {
-        nextEl: ".swiper-button-next",
-        prevEl: ".swiper-button-prev",
-      },
-  });
-  </script>
+<script src="js/main.js"></script>
+
 </body>
 </html>
