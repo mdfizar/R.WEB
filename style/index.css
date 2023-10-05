@@ -37,10 +37,6 @@ font-family: roboto, arial, sans-serif;
   background-size: 370px;
   transition: 1s;
 }
-.item li a {
-  font-size: 20px;;
-}
-
 .item li:hover .hover {
   background-position: 150px;
 }
@@ -183,7 +179,6 @@ transform: translate(-50%, -50%);
 .profile {
   display: flex;
   justify-content: space-between;
-  flex-wrap: wrap;
   background-color: #f8f8f8;
   border-top: 1px solid rgb(198, 195, 195);
   padding: 10px 15px;
@@ -215,7 +210,7 @@ transform: translate(-50%, -50%);
 
 /*----------- contact -------------- */
 #contact {
-height: 165vh;
+height: 95vh;
  box-shadow: rgba(17, 17, 26, 0.1) 0px 1px 0px, rgba(17, 17, 26, 0.1) 0px 8px 24px, rgba(17, 17, 26, 0.1) 0px 16px 48px;
 }
 .background-img {
