@@ -1,25 +1,56 @@
+/*---------- GOLOBAL ------------- */
+body {
+padding: 0px;
+margin: 0px;
+box-sizing: border-box;
+font-family: roboto, arial, sans-serif;
+font-size: 20px;
+}
+
+
 /*----------- HEADER -----------------*/
-#header {
-  height: 70rem;
-  background-image: url("https://thumbs.dreamstime.com/b/happy-young-woman-doing-shopping-internet-portrait-simling-female-behind-computer-31036653.jpg");
-  background-repeat: no-repeat;
+ #bg-img {
+  background-image: url("https://bootstrapmade.com/demo/templates/DevFolio/assets/img/hero-bg.jpg");
+  height: 95vh;
   background-size: cover;
-}
-.item .hover{
+  background-position: center;
+  position: relative;
+  background-attachment: fixed;
+ }
+ #bg-img .content {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+ }
+ #bg-img .overlay {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  background-color: #000;
+  opacity: 0.4;
+ }
+.item li .hover{
   width:100%;
-  height: 5px;
-  background: -webkit-linear-gradient(0deg,transparent 50%, black 50%);
-  background-size: 235px;
-  transition: 1.5s;
+  height: 2px;
+  background: -webkit-linear-gradient(0deg,transparent 50%, #fff 50%);
+  background-size: 370px;
+  transition: 1s;
 }
+.item li a {
+  font-size: 25px;;
+}
+
 .item li:hover .hover {
-  background-position: 100px;
+  background-position: 150px;
 }
-@media (max-width: 992px) {
-  .item .hover {
-    width: 100px;
-    transition: 0.6s;
-  }
+/*------------ABOUT ----------*/
+.underline {
+  width: 80px; 
+  height: 3px;
+  background-color:#558ade;
+  margin-bottom: 7px;
 }
 
 /*----------- service --------------- */
@@ -48,9 +79,165 @@
 .my-card:hover i {
   color:white;
 }
+#cunting {
+  position:relative;
+  background-image: url("https://bootstrapmade.com/demo/templates/DevFolio/assets/img/counters-bg.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat:no-repeat;
+  background-attachment: fixed;
+  height: 600px;
+}
+#cunting .container {
+ position: absolute;
+ left: 50%;
+ top: 50%;
+ transform: translate(-50%, -50%);
+}
+#cunting .overlay {
+  width: 100%;
+  height: 100%;
+  background-color:#0078ff;
+  opacity: 0.7;
+}
+#cunting .cunting-container {
+  text-align: center;
+  color: white;
+}
+.cunting-container div {
+  width: 90px;
+  height:90px;
+  border-radius: 50%;
+  margin:auto;
+  border: 10px solid #cad8ee;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.cunting-container div i {
+  color:white;
+  font-size: 35px;
+}
+.cunting-container h1 {
+  margin-top: 16px;
+  color: white;
+}
+
+
+
+/*-----SWIPER slider STYLE------*/
+#slider {
+  background-image: url(https://bootstrapmade.com/demo/templates/DevFolio/assets/img/overlay-bg.jpg);
+  background-size: contain;
+  height: 100%;
+  position: relative;
+  height: 600px;
+}
+#slider .overlay {
+  background-color:#0078ff;
+  width: 100%;
+  height: 100%;
+  opacity: 0.7;
+
+}
+#slider .my-container {
+position: absolute;
+left: 50%;
+top: 50%;
+transform: translate(-50%, -50%);
+}
+.swiper-slide .img {
+  text-align: center;
+  color: white;
+}
+.swiper-slide .img img { 
+width: 200px;
+height:200px;
+border-radius: 50%;
+object-fit: cover;
+}
+
+.swiper-v {
+  background: #eee;
+}
+
+/* --------- BLOG --------------- */
+#blog .img {
+  position: relative;
+}
+#blog .img .img-titel {
+background-color: #0078ff;
+color: white;
+width:fit-content;
+font-size: 18px;
+padding: 7px 18px;
+border: none;
+border-radius: 4px;
+position: absolute;
+bottom: -46px;
+left: 50%;
+right: 50%;
+transform: translate(-50%, -50%);
+}
+#blog .text {
+  padding-bottom: 20px;
+}
+.profile {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  background-color: #f8f8f8;
+  border-top: 1px solid rgb(198, 195, 195);
+  padding: 10px 15px;
+}
+.profile .left-secttion,.profile .right-section {
+  display: flex;
+  align-items: center;
+}
+.profile .left-secttion img {
+  width:50px;
+  height: 50px;
+  border-radius: 50%;
+}
+.profile .left-secttion p { 
+  margin-bottom: 0px;
+  margin-left: 10px;
+  font-size: 25px;
+}
+.profile .right-section p {
+  margin-bottom: 0px;
+  margin-left: 10px;
+  font-size: 25px;
+}
+.profile .right-section i {
+  font-size: 30px;
+}
+
 
 
 /*----------- contact -------------- */
+#contact {
+height: 165vh;
+ box-shadow: rgba(17, 17, 26, 0.1) 0px 1px 0px, rgba(17, 17, 26, 0.1) 0px 8px 24px, rgba(17, 17, 26, 0.1) 0px 16px 48px;
+}
+.background-img {
+  background-image: url(https://bootstrapmade.com/demo/templates/DevFolio/assets/img/overlay-bg.jpg);
+  position: relative;
+  background-attachment: fixed;
+}
+.background-img .overlay {
+  height: 100%;
+  width: 100%;
+  background-color: #0078ff;
+  opacity: 0.5;
+}
+.background-img .content-1 {
+  background-color: #fff;
+  position:absolute;
+  left: 50%;
+  top:57%;
+  transform: translate(-50%, -50%);
+}
 #contact .contact-icon nav p  span i {
   color: (5, 130, 172);
   font-size: 25px;
@@ -114,18 +301,23 @@
   color: blue;
   font-size: 40px;
 }
-
-/*-----SWIPER slider STYLE------*/
-.swiper-slide .img {
-  text-align: center;
-}
-.swiper-slide .img img { 
-width: 200px;
-height:200px;
-border-radius: 50%;
-object-fit: cover;
+/*------FOOTER----------*/
+#footer-bg {
+  background-color: #2679de;
+  padding: 15px;
+  color: white;
 }
 
-.swiper-v {
-  background: #eee;
-}
+
+@media (max-width: 993px) {
+  #cunting{
+    height: 120vh;
+  }
+  #contact {
+    height: 150vh;
+    }
+    .item li a .hover {
+      width: 100px;
+      transition: 1s;
+    }
+  }
