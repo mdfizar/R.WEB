@@ -195,15 +195,13 @@ transform: translate(-50%, -50%);
 .profile .left-secttion p { 
   margin-bottom: 0px;
   margin-left: 10px;
-  font-size: 25px;
 }
 .profile .right-section p {
   margin-bottom: 0px;
   margin-left: 10px;
-  font-size: 25px;
 }
 .profile .right-section i {
-  font-size: 30px;
+  font-size: 20px;
 }
 
 
